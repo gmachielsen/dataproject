@@ -12,15 +12,16 @@ function makeCharts(error, transactionsData) {
     let dateDim = ndx.dimension(dc.pluck("date"));
     let storeDim = ndx.dimension(dc.pluck("store"));
     let stateDim = ndx.dimension(dc.pluck("state"));
+    let genderDim = ndx.dimension(dc.pluck("gender"));
     let pieDim = ndx.dimension(function(d) {
         if (d.spend >= 200) {
-            return "big";
+            return "> 200 euro";
         }
         else if (d.spend >= 100) {
-            return "medium"
+            return "100-199 euro"
         }
         else {
-            return "Small";
+            return "< 100 euro";
         }
     });
 
@@ -55,6 +56,7 @@ function makeCharts(error, transactionsData) {
 
     let totalSpendByStore = storeDim.group().reduceSum(dc.pluck("spend"));
     let totalSpendByState = stateDim.group().reduceSum(dc.pluck("spend"));
+    let totalSpendByGender = genderDim.group().reduceSum(dc.pluck("spend"));
 
     let minDate = dateDim.bottom(1)[0].date;
     let maxDate = dateDim.top(1)[0].date;
@@ -65,22 +67,23 @@ function makeCharts(error, transactionsData) {
     let storeChart = dc.pieChart("#store-chart");
     let stateChart = dc.pieChart("#state-chart");
     let averageChart = dc.barChart("#average-chart");
-    
+
     let personColors = d3.scale.ordinal().range(["red", "green", "blue"]);
 
     spendChart
-        .width(300)
-        .height(150)
-        .dimension(nameDim)
-        .group(totalSpend)
+
+        .width(600)
+        .height(350)
+        .dimension(stateDim)
+        .group(totalSpendByState)
         .x(d3.scale.ordinal())
         .xUnits(dc.units.ordinal)
-        .xAxisLabel("Person")
-        .yAxis().ticks(5);
+        .xAxisLabel("Provincie")
+        .yAxis().ticks(12);
 
     dateChart
         .width(500)
-        .height(300)
+        .height(350)
         .dimension(dateDim)
         .group(totalSpendByDate)
         .x(d3.time.scale().domain([minDate, maxDate]))
@@ -96,8 +99,8 @@ function makeCharts(error, transactionsData) {
     stateChart
         .height(300)
         .radius(100)
-        .dimension(stateDim)
-        .group(totalSpendByState);
+        .dimension(genderDim)
+        .group(totalSpendByGender);
 
     bigSmallChart
         .radius(200)

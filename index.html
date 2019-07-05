@@ -12,6 +12,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
     <script src="graphtemplate.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.8/dc.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <style>
     g .axis.x text {
         transform: rotate(-45deg);
@@ -20,13 +21,77 @@
 </style>
 </head>
 <body>
-    <a href="javascript:dc.filterAll(); dc.renderAll();"><strong>Reset All</strong></a> 
+
+
+  <div class="container-fluid">
+  	<div class="row">
+  		<div class="col-md-12">
+  			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+  			</nav>
+  			<div class="jumbotron">
+  				<h2>
+  					Dashboard Keller-sports webshop!
+  				</h2>
+  				<p>
+            Informatie over sales.
+  				</p>
+  			</div>
+  		</div>
+  	</div>
+  	<div class="row">
+  		<div class="col-md-4">
+  			<h2>
+  				Sales per jaar
+  			</h2>
+  			<p>
+          Onderstaande lijngrafiek geeft omzet in euro's weer over tijd.
+      	</p>
+        <div class="col-xs-12" id="date-chart"></div>
+
+  		</div>
+  		<div class="col-md-4">
+  			<h2>
+  				Omzet per provincie
+  			</h2>
+  			<p>
+          Onderstaande staafdiagram geeft het de omzert weer per provincie.
+  			</p>
+        <div id="spend-chart"></div>
+  		</div>
+  		<div class="col-md-4">
+  			<h2>
+  				Heading
+  			</h2>
+  			<p>
+  				Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+  			</p>
+        <div id="store-chart"></div>
+
+  			<p>
+  				<a class="btn" href="#">View details »</a>
+  			</p>
+  		</div>
+  	</div>
+  </div>
+
+
+
+
+
+
+  <div class="col-xs-12">
+    <a href="javascript:dc.filterAll(); dc.renderAll();"><strong>Reset All</strong></a>
+  <div class="col-md-6">
     <div id="spend-chart"></div>
-    <div id="date-chart"></div>
-    <div id="store-chart"></div>
+    <div>
+      <div class="col-md-6">
+        <div id="date-chart"></div>
+        <div>
     <div id="state-chart"></div>
     <div id="big-small-chart"></div>
     <div id="average-chart"></div>
+  </div>
 </body>
 
 </html>
