@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.8/dc.js"></script>
@@ -104,54 +103,6 @@
       </div>
     </div>
   </div>
-
-<table id="employee_table">
-<tr>
-<td>date</td>
-</tr>
-</table>
-
-<table id="table">
-
-</table>
-<script type="text/javascript">
-  $(document).ready(function() {
-    $.getJSON("transactions.json", function (data) {
-      let webshop_data = '';
-      $.each(data, function(key, value) {
-        webshop_data += '<tr>';
-        webshop_data += '<td>' + value.date + '</td>';
-        webshop_data += '<td>' + value.name + '</td>';
-        webshop_data += '<td>' + value.gender + '</td>';
-        webshop_data += '<td>' + value.store + '</td>';
-        webshop_data += '<td>' + value.state + '</td>';
-        webshop_data += '<td>' + value.spend + '</td>';
-        webshop_data += '</tr>';
-      });
-      $('#employee_table').append(webshop_data);
-    });
-  });
-</script>
-<script>
-   let object = JSON.parse('transactions.json')
-   for (x in object) {
-  document.getElementById("table").innerHTML += object[x] + "<br>";
-}
-</script>
-
-<!--
-  <div class="col-xs-12">
-    <a href="javascript:dc.filterAll(); dc.renderAll();"><strong>Reset All</strong></a>
-  <div class="col-md-6">
-    <div id="spend-chart"></div>
-    <div>
-      <div class="col-md-6">
-        <div id="date-chart"></div>
-        <div>
-    <div id="state-chart"></div>
-    <div id="big-small-chart"></div>
-    <div id="average-chart"></div>
-  </div> -->
 </body>
 
 </html>
