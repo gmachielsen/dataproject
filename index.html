@@ -133,8 +133,11 @@
   });
 </script>
 <script>
+  let object = x;
    let object = JSON.parse('transactions.json')
-   document.getElementById("table").innerHTML += object.name + "<br>";
+   for (x in object) {
+  document.getElementById("table").innerHTML += object[x] + "<br>";
+}
 </script>
 
 <!--
