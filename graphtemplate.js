@@ -65,7 +65,7 @@ function makeCharts(error, transactionsData) {
     let dateChart = dc.lineChart("#date-chart");
     let bigSmallChart = dc.pieChart("#big-small-chart");
     let storeChart = dc.pieChart("#store-chart");
-    let stateChart = dc.pieChart("#state-chart");
+    let genderChart = dc.pieChart("#gender-chart");
     let averageChart = dc.barChart("#average-chart");
 
     let personColors = d3.scale.ordinal().range(["red", "green", "blue"]);
@@ -96,7 +96,7 @@ function makeCharts(error, transactionsData) {
         .dimension(storeDim)
         .group(totalSpendByStore);
 
-    stateChart
+    genderChart
         .height(300)
         .radius(100)
         .dimension(genderDim)
