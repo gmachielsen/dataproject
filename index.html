@@ -121,6 +121,11 @@
       $.each(data, function(key, value) {
         webshop_data += '<tr>';
         webshop_data += '<td>' + value.date + '</td>';
+        webshop_data += '<td>' + value.name + '</td>';
+        webshop_data += '<td>' + value.gender + '</td>';
+        webshop_data += '<td>' + value.store + '</td>';
+        webshop_data += '<td>' + value.state + '</td>';
+        webshop_data += '<td>' + value.spend + '</td>';
         webshop_data += '</tr>';
       });
       $('#employee_table').append(webshop_data);
