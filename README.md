@@ -1,4 +1,4 @@
-Stream1 - Frontend coding project Live link: https://gmachielsen.github.io/admachielsen/
+Stream1 - Frontend coding project Live link: https://gmachielsen.github.io/dataproject/
 
 Purpose: • To create a backendless artist page for my dad, who is an artist as hobby. Needs it fulfils: • Ability for users to view his artwork and to contact him, by using a htmlform and abilities to contact him on whatsapp, e-mail, instagram and facebook,(as there is no backend, the contactform is just a styled html form.).
 
