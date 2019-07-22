@@ -23,6 +23,8 @@ d3.js is a JavaScript library for manipulating documents based on data. D3 helps
 
 CSS this is used, to make the hover effect and for styling the colors and fonts of this dashboard. 
 
+Json the json file is made by myself as I found it hard to find ecommerce revenue data. The graphs are reading the dating from the json file in the html the graphs are displayed.
+
 Deployment
 This data project is deployed via githubpages. 
 
