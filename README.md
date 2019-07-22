@@ -1,16 +1,22 @@
-Stream1 - Frontend coding project Live link: https://gmachielsen.github.io/dataproject/
+Stream2 - Datacentric coding project Live link: https://gmachielsen.github.io/dataproject/
 
 Purpose: • To create a backendless artist page for my dad, who is an artist as hobby. Needs it fulfils: • Ability for users to view his artwork and to contact him, by using a htmlform and abilities to contact him on whatsapp, e-mail, instagram and facebook,(as there is no backend, the contactform is just a styled html form.).
 
-Functionality: Needs to have a responsive design on mobile first design. This has been accomplished using Bootstrap. User Interface (UI) and (UX): The website has different user interfaces dependent on screen size. There is a mobile and a desktop version of the website. The differences are that the desktop version has a different heading image and that the midsection has 3 columns with two thumbnails per column, whereas the mobile version has one column with 6 thumbnails. I have done that to provide a better user experience. Each thumbnail represents a different page, where paintings are viewable. Also on the thumbnail pages there is a difference between the desktop and the mobile website. The desktop website has on every page all paintings displayed, one big and the rest small. By hovering on the small picture the picture will be displayed in big. The mobile version has a click carousel. The reason is that on a mobile the screen would be too small by displaying all the pictures on one page.
+I have used the following techniques:
 
-Technologies used: • Javascript - For form submission and the scroll down and scroll up functionality. • JQuery – for sliders and the navbar. • Bootstrap 3 – used to build up the whole grid. • CSS Flexbox. Is used to align the footer. • Bootsnipp and codepen used, for the navbar(bootsnipp.com) and the textsliders(codepen.com) • W3 Javascript - Used for creating an infinite loop to cycle hue. • W3 Include HTML - Used to create a standard navbar section. • Font Awesome - Used for some icons. • Github and Github Pages - Used to track the progress of the project, and host the site for submission without a backend. • Hover CSS effects. • HTML5 • CSS3 • Cloud 9 - Used to code the project. Deployment method: Github Pages https://gmachielsen.github.io/admachielsen/
+Bootstrap:
 
-Index page • Has two textsliders in it. • Has an up and down scroll bottun.
-• Has hover effects over pictures and navbarlogo and the footer. Paarden.html • Is used to show artwork about horses. • Carousel cycles pictures automatically or when users click the appropriate arrows. A compromise had to be made with the size of the carousel due to the varying image dimensions.
+This is used for the development of the lay out of this dashboard, namely 2 rows of 3 columns.
 
-Honden.html • Is used to show artwork about dogs. • Carousel cycles pictures automatically or when users click the appropriate arrows. A compromise had to be made with the size of the carousel due to the varying image dimensions. Portret.html • Is used to show artwork about human portraits. • Carousel cycles pictures automatically or when users click the appropriate arrows. A compromise had to be made with the size of the carousel due to the varying image dimensions. Vogels.html • Is used to show artwork about birds. • Carousel cycles pictures automatically or when users click the appropriate arrows. A compromise had to be made with the size of the carousel due to the varying image dimensions.
+dc.js a dimensional charting javascrpt library with native crossfilter support, allowing highly efficient exploration on large multi-dimensional datasets.
 
-Landschappen.html • Is used to show artwork about landscapes. • Carousel cycles pictures automatically or when users click the appropriate arrows. A compromise had to be made with the size of the carousel due to the varying image dimensions.
+d3.js is a JavaScript library for manipulating documents based on data. D3 helps you bring data to life using HTML, SVG, and CSS. D3’s emphasis on web standards gives you the full capabilities of modern browsers without tying yourself to a proprietary framework, combining powerful visualization components and a data-driven approach to DOM manipulation.
 
-Stilleven.html • Is used to show artwork about still life. • Carousel cycles pictures automatically or when users click the appropriate arrows. A compromise had to be made with the size of the carousel due to the varying image dimensions.
+CSS this is used, to make the hover effect and for styling the colors and fonts of this dashboard. 
+
+Deployment
+This data project is deployed via githubpages. 
+
+Credits
+Code Instute has the credits for teaching me how to make graphs with javascript D3.
+
