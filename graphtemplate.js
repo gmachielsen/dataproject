@@ -108,7 +108,7 @@ function makeCharts(error, transactionsData) {
         .group(pieGroup);
 
     averageChart
-        .width(300)
+        .width(400)
         .height(300)
         .dimension(averageDim)
         .group(averageGroup)
