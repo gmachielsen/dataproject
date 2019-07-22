@@ -1,6 +1,13 @@
 Stream2 - Datacentric coding project Live link: https://gmachielsen.github.io/dataproject/
 
-Purpose: • To create a backendless artist page for my dad, who is an artist as hobby. Needs it fulfils: • Ability for users to view his artwork and to contact him, by using a htmlform and abilities to contact him on whatsapp, e-mail, instagram and facebook,(as there is no backend, the contactform is just a styled html form.).
+Purpose: • The purpose of this project is to build a nice datacentric dashboard. Therefore I have decided to build a e-commerce dashboard which is simulating the sales of an online-shop based in the Netherlands and which is attracting Dutch Customers. The online-shop is a sportshop, which is selling items about tennis, running and fitness. In order to build this dashboard I have used 6 graphs namely: 
+
+1. a graph which is showing the revenue by date in a linegraph.
+2. showing the revenue by state, so that you that the analyst is able to compare and analyse where in the Netherlands the revenue is generated. 
+3. A piechart which is showing the weight of the online shop categories for its total revenue.
+4. A gender piechart which is showing the how the revenue is distributed by gender.
+5. A piechart which is showing in how much customers per order spend in the shop, allocated by three categories above 200 and under 100 euros and in between.
+6 is a bar chart which is displaying the total revenue per customer.
 
 I have used the following techniques:
 
