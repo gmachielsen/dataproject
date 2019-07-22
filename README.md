@@ -9,6 +9,8 @@ Purpose: • The purpose of this project is to build a nice datacentric dashboar
 5. A piechart which is showing in how much customers per order spend in the shop, allocated by three categories above 200 and under 100 euros and in between.
 6 is a bar chart which is displaying the total revenue per customer.
 
+By clicking on the pie chart, the bar chart or the line chart the dc.crossfilter kicks in charts will dymamically respond.
+
 I have used the following techniques:
 
 Bootstrap:
