@@ -1,6 +1,6 @@
 Stream2 - Datacentric coding project Live link: https://gmachielsen.github.io/dataproject/
 
-Purpose: • The purpose of this project is to build a nice datacentric dashboard. Therefore I have decided to build a e-commerce dashboard which is simulating the sales of an online-shop based in the Netherlands and which is attracting Dutch Customers. The online-shop is a sportshop, which is selling items about tennis, running and fitness. In order to build this dashboard I have used 6 graphs namely: 
+Purpose: • The purpose of this project is to build a nice datacentric dashboard. Therefore I have decided to build a e-commerce dashboard which is simulating the sales of an online-shop based in the Netherlands and which is attracting Dutch Customers. The online-shop is a sportshop, which is selling items about tennis, running and fitness in 2012 and 2013. In order to build this dashboard I have used 6 graphs namely: 
 
 1. a graph which is showing the revenue by date in a linegraph.
 2. showing the revenue by state, so that you that the analyst is able to compare and analyse where in the Netherlands the revenue is generated. 
