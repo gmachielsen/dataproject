@@ -72,7 +72,7 @@ function makeCharts(error, transactionsData) {
 
     spendChart
 
-        .width(600)
+        .width(350)
         .height(350)
         .dimension(stateDim)
         .group(totalSpendByState)
@@ -82,7 +82,7 @@ function makeCharts(error, transactionsData) {
         .yAxis().ticks(12);
 
     dateChart
-        .width(500)
+        .width(350)
         .height(350)
         .dimension(dateDim)
         .group(totalSpendByDate)
