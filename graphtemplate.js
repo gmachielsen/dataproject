@@ -115,6 +115,9 @@ function makeCharts(error, transactionsData) {
         .valueAccessor(function(p) {
             return p.value.average;
         })
+        .valueAccessor(function(p) {
+            return arr.sort((a, b) => a-b);
+        })
         .x(d3.scale.ordinal())
         .xUnits(dc.units.ordinal)
         .elasticY(true)
